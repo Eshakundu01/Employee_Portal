@@ -1,0 +1,8 @@
+uuid: ce96000f-8ab8-40d5-8197-c5a80f01872c
+langcode: en
+status: true
+dependencies: {  }
+id: footer-menu
+label: 'Footer menu'
+description: 'The menus that must be placed in the footer'
+locked: false

@@ -1,0 +1,33 @@
+uuid: bd316db0-8fa7-4d9e-951b-b444f8eb7be3
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.admin-menu
+  module:
+    - system
+    - user
+  theme:
+    - bootstrap
+id: adminmenu
+theme: bootstrap
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:admin-menu'
+settings:
+  id: 'system_menu_block:admin-menu'
+  label: 'Admin Menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      administrator: administrator

@@ -1,0 +1,33 @@
+uuid: 2c5377d3-8169-4937-ae9a-43b83601edd9
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+    - filter.format.restricted_html
+    - node.type.blogs
+  module:
+    - contextual
+    - filter
+    - node
+    - path
+    - system
+    - toolbar
+id: blogger
+label: Blogger
+weight: 5
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access toolbar'
+  - 'access user profiles'
+  - 'create blogs content'
+  - 'create url aliases'
+  - 'edit own blogs content'
+  - 'revert blogs revisions'
+  - 'use text format full_html'
+  - 'use text format restricted_html'
+  - 'view all revisions'
+  - 'view own unpublished content'
+  - 'view the administration theme'

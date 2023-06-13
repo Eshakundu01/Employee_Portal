@@ -1,0 +1,49 @@
+uuid: cc8c50eb-fa92-4ab1-91d9-33ba05254fa4
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.blogs
+    - node.type.project
+    - taxonomy.vocabulary.skills
+  module:
+    - comment
+    - contextual
+    - file
+    - node
+    - system
+    - taxonomy
+    - toolbar
+    - tour
+id: hr
+label: HR
+weight: 4
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access files overview'
+  - 'access taxonomy overview'
+  - 'access toolbar'
+  - 'access tour'
+  - 'access user profiles'
+  - 'administer permissions'
+  - 'administer users'
+  - 'change own username'
+  - 'create blogs content'
+  - 'create project content'
+  - 'create terms in skills'
+  - 'delete own blogs content'
+  - 'delete own project content'
+  - 'edit any blogs content'
+  - 'edit any project content'
+  - 'edit own blogs content'
+  - 'edit own project content'
+  - 'edit terms in skills'
+  - 'revert blogs revisions'
+  - 'skip comment approval'
+  - 'view blogs revisions'
+  - 'view own unpublished content'
+  - 'view project revisions'
+  - 'view the administration theme'

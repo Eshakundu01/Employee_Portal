@@ -1,0 +1,29 @@
+uuid: a12ce13f-f316-46f8-894a-03392ed74ea9
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.projects
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap
+id: views_block__projects_block_1
+theme: bootstrap
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:projects-block_1'
+settings:
+  id: 'views_block:projects-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /home

@@ -1,0 +1,18 @@
+uuid: 1aa1953a-9618-4d27-86f9-0697c37dc930
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Blogs
+type: blogs
+description: 'Different blogs can be created using this.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

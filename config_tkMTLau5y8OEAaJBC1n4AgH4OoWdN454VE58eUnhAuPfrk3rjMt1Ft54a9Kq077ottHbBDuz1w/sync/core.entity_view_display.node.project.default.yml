@@ -1,0 +1,96 @@
+uuid: c4f81ee2-96ba-4bf4-9b9c-9585a633c452
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.project.body
+    - field.field.node.project.field_company_name
+    - field.field.node.project.field_project_image
+    - field.field.node.project.field_start_date
+    - field.field.node.project.field_team
+    - image.style.medium
+    - node.type.project
+  module:
+    - datetime
+    - ds
+    - image
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_2col_stacked
+      settings:
+        disable_css: false
+        entity_classes: all_classes
+        classes:
+          layout_class: {  }
+        wrappers:
+          header: div
+          left: div
+          right: div
+          footer: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        label: ''
+    regions:
+      left:
+        - field_start_date
+        - field_company_name
+        - field_team
+      right:
+        - field_project_image
+      footer:
+        - body
+id: node.project.default
+targetEntityType: node
+bundle: project
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: footer
+  field_company_name:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: left
+  field_project_image:
+    type: image
+    label: visually_hidden
+    settings:
+      image_link: ''
+      image_style: medium
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 3
+    region: right
+  field_start_date:
+    type: datetime_default
+    label: inline
+    settings:
+      timezone_override: ''
+      format_type: olivero_medium
+    third_party_settings: {  }
+    weight: 0
+    region: left
+  field_team:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: left
+hidden:
+  links: true

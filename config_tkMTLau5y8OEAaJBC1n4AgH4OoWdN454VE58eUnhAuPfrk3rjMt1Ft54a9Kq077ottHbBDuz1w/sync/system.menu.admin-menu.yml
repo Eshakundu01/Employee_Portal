@@ -1,0 +1,8 @@
+uuid: eba37923-2a33-4e64-a097-3e896c5d9954
+langcode: en
+status: true
+dependencies: {  }
+id: admin-menu
+label: 'Admin Menu'
+description: 'Links that is visible to admin only '
+locked: false

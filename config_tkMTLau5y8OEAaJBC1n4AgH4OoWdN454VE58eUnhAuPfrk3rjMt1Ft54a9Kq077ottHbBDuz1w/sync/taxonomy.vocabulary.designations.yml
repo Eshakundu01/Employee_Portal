@@ -1,0 +1,8 @@
+uuid: fe498e43-34c5-4f1f-8683-1983b470c82e
+langcode: en
+status: true
+dependencies: {  }
+name: Designations
+vid: designations
+description: 'List of position provided in the company'
+weight: 0

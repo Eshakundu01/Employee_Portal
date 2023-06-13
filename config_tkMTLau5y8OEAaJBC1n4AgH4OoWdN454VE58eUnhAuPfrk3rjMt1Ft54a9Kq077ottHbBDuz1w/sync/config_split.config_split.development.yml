@@ -1,0 +1,19 @@
+uuid: 63e19d1d-8aff-4c33-9d8b-3e1c4680c4ad
+langcode: en
+status: true
+dependencies: {  }
+id: development
+label: Development
+description: ''
+weight: 0
+stackable: false
+storage: folder
+folder: ../config_tkMTLau5y8OEAaJBC1n4AgH4OoWdN454VE58eUnhAuPfrk3rjMt1Ft54a9Kq077ottHbBDuz1w/dev
+module:
+  devel: 0
+  devel_generate: 0
+theme: {  }
+complete_list:
+  - devel.settings
+  - devel.toolbar.settings
+partial_list: {  }

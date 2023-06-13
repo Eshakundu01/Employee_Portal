@@ -1,0 +1,25 @@
+uuid: e6757941-9e24-44a8-b897-3b8ae917aa79
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:316246eb-5859-4859-87e2-deabe365945c'
+  module:
+    - block_content
+  theme:
+    - bootstrap
+id: footermenu_2
+theme: bootstrap
+region: footer
+weight: -8
+provider: null
+plugin: 'block_content:316246eb-5859-4859-87e2-deabe365945c'
+settings:
+  id: 'block_content:316246eb-5859-4859-87e2-deabe365945c'
+  label: 'Footer menu'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

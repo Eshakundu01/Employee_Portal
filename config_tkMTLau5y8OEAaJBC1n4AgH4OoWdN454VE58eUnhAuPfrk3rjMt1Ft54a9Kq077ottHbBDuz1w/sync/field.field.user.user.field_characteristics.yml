@@ -1,0 +1,20 @@
+uuid: 1213967b-5dbc-443f-b3fb-71cd564d4ad0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_characteristics
+  module:
+    - user
+id: user.user.field_characteristics
+field_name: field_characteristics
+entity_type: user
+bundle: user
+label: 'Key Characteristics'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

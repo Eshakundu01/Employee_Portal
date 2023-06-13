@@ -1,0 +1,21 @@
+uuid: 08763cb8-ea5f-49cc-8736-d01d694ad8c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_title
+  module:
+    - options
+    - user
+id: user.user.field_title
+field_name: field_title
+entity_type: user
+bundle: user
+label: Title
+description: 'Choose the title for the given employee.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

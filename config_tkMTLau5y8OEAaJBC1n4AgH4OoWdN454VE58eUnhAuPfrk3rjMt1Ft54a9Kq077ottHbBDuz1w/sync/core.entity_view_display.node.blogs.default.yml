@@ -1,0 +1,91 @@
+uuid: 86875371-8382-43ba-86c9-db41c8f29b23
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.blog_comment.default
+    - field.field.node.blogs.body
+    - field.field.node.blogs.field_blog_image
+    - field.field.node.blogs.field_post_new
+    - image.style.medium
+    - node.type.blogs
+  module:
+    - comment
+    - ds
+    - image
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_2col_stacked
+      settings:
+        disable_css: false
+        entity_classes: all_classes
+        classes:
+          layout_class: {  }
+        wrappers:
+          header: div
+          left: div
+          right: div
+          footer: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        label: ''
+    regions:
+      header:
+        - node_post_date
+        - node_author
+      left:
+        - body
+      right:
+        - field_blog_image
+      footer:
+        - field_post_new
+    fields:
+      node_post_date:
+        plugin_id: node_post_date
+        weight: 0
+        label: hidden
+        formatter: ds_post_date_medium
+      node_author:
+        plugin_id: node_author
+        weight: 1
+        label: hidden
+        formatter: author_linked
+id: node.blogs.default
+targetEntityType: node
+bundle: blogs
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: left
+  field_blog_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: medium
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 3
+    region: right
+  field_post_new:
+    type: comment_default
+    label: above
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    weight: 4
+    region: footer
+hidden:
+  links: true

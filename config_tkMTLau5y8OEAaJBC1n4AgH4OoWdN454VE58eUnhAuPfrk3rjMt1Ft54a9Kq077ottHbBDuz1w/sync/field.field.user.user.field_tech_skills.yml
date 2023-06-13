@@ -1,0 +1,30 @@
+uuid: 8b308342-6784-4620-a8ed-56fac60e2091
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_tech_skills
+    - taxonomy.vocabulary.skills
+  module:
+    - user
+id: user.user.field_tech_skills
+field_name: field_tech_skills
+entity_type: user
+bundle: user
+label: 'Tech Skills'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      skills: skills
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

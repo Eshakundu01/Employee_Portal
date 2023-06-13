@@ -1,0 +1,168 @@
+uuid: 677dbeb1-464e-4b68-886f-f3f7fe82aef8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.user.user.field_age
+    - field.field.user.user.field_characteristics
+    - field.field.user.user.field_company
+    - field.field.user.user.field_designation
+    - field.field.user.user.field_earns
+    - field.field.user.user.field_goals
+    - field.field.user.user.field_tech_skills
+    - field.field.user.user.field_title
+    - field.field.user.user.user_picture
+    - image.style.medium
+  module:
+    - ds
+    - field_group
+    - image
+    - options
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_2col_stacked_fluid
+      settings:
+        disable_css: false
+        entity_classes: all_classes
+        classes:
+          layout_class: {  }
+        wrappers:
+          header: div
+          left: div
+          right: div
+          footer: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        label: ''
+    regions:
+      left:
+        - username
+        - field_title
+        - group_background
+        - field_age
+        - field_company
+        - field_earns
+        - field_tech_skills
+      right:
+        - user_picture
+      footer:
+        - field_characteristics
+        - field_goals
+    fields:
+      username:
+        plugin_id: username
+        weight: 0
+        label: inline
+        formatter: default
+        settings:
+          link: false
+          'link class': ''
+          wrapper: span
+          class: ''
+  field_group:
+    group_background:
+      children:
+        - field_age
+        - field_company
+        - field_earns
+      label: Background
+      parent_name: ''
+      region: left
+      weight: 2
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        description: ''
+        element: div
+        show_label: true
+        label_element: h5
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+_core:
+  default_config_hash: mZLyuWM9CQx2ZJVqFGSbzgFnHzudVbHBYmdU256A5Wk
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  field_age:
+    type: number_integer
+    label: visually_hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 3
+    region: left
+  field_characteristics:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 8
+    region: footer
+  field_company:
+    type: string
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: left
+  field_earns:
+    type: number_decimal
+    label: visually_hidden
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 5
+    region: left
+  field_goals:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 9
+    region: footer
+  field_tech_skills:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings:
+      ds:
+        ds_limit: ''
+    weight: 6
+    region: left
+  field_title:
+    type: list_default
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: left
+  user_picture:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: medium
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 7
+    region: right
+hidden:
+  field_designation: true
+  member_for: true

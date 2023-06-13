@@ -1,0 +1,30 @@
+uuid: 6c16093e-cf3e-4c68-9cce-aa0d806d84fb
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - user
+id: user.field_title
+field_name: field_title
+entity_type: user
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'Front-end Developer'
+      label: 'Front-end Developer'
+    -
+      value: 'Back-end Developer'
+      label: 'Back-end Developer'
+    -
+      value: 'Drupal Developer'
+      label: 'Drupal Developer'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

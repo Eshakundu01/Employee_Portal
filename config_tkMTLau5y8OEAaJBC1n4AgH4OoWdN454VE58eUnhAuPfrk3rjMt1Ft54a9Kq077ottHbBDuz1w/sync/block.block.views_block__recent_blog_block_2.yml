@@ -1,0 +1,29 @@
+uuid: 59ce1ea4-29b8-4db5-acaf-e1c268e59b67
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.recent_blog
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap
+id: views_block__recent_blog_block_2
+theme: bootstrap
+region: sidebar_second
+weight: -8
+provider: null
+plugin: 'views_block:recent_blog-block_2'
+settings:
+  id: 'views_block:recent_blog-block_2'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /home

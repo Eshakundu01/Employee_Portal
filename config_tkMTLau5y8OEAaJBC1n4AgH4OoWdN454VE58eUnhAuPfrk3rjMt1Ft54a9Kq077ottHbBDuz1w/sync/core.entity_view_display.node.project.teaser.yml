@@ -1,0 +1,86 @@
+uuid: f135b70b-c3a2-4c71-8474-89ad6c9d41cf
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.project.body
+    - field.field.node.project.field_company_name
+    - field.field.node.project.field_project_image
+    - field.field.node.project.field_start_date
+    - field.field.node.project.field_team
+    - image.style.thumbnail
+    - node.type.project
+  module:
+    - datetime
+    - ds
+    - image
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_2col
+      settings:
+        disable_css: false
+        entity_classes: all_classes
+        classes:
+          layout_class: {  }
+        wrappers:
+          left: div
+          right: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        label: ''
+    regions:
+      left:
+        - field_project_image
+      right:
+        - node_title
+        - field_company_name
+        - field_team
+        - field_start_date
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 1
+        label: hidden
+        formatter: default
+id: node.project.teaser
+targetEntityType: node
+bundle: project
+mode: teaser
+content:
+  field_company_name:
+    type: string
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: right
+  field_project_image:
+    type: image
+    label: visually_hidden
+    settings:
+      image_link: ''
+      image_style: thumbnail
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: left
+  field_start_date:
+    type: datetime_default
+    label: visually_hidden
+    settings:
+      timezone_override: Indian/Chagos
+      format_type: olivero_medium
+    third_party_settings: {  }
+    weight: 4
+    region: right
+hidden:
+  body: true
+  field_team: true
+  links: true

@@ -1,0 +1,24 @@
+uuid: 62600b2c-4188-48e7-94bb-451b3a76f4af
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_earns
+  module:
+    - user
+id: user.user.field_earns
+field_name: field_earns
+entity_type: user
+bundle: user
+label: Earns
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 5.0
+  max: null
+  prefix: ''
+  suffix: /year
+field_type: decimal

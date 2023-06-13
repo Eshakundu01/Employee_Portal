@@ -1,0 +1,33 @@
+uuid: 3251fada-f455-49e2-83f5-0389f1c48fa8
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:9016837e-1137-465c-a5ec-eabb9fa1981b'
+  module:
+    - block_content
+    - user
+  theme:
+    - bootstrap
+id: adminsblock
+theme: bootstrap
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'block_content:9016837e-1137-465c-a5ec-eabb9fa1981b'
+settings:
+  id: 'block_content:9016837e-1137-465c-a5ec-eabb9fa1981b'
+  label: 'Admins Block'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      administrator: administrator

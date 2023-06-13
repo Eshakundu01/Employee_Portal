@@ -1,0 +1,8 @@
+uuid: 3e32bfa1-3ede-4bc4-af98-c30fe4b9484b
+langcode: en
+status: true
+dependencies: {  }
+name: Skills
+vid: skills
+description: 'Set of skills are listed'
+weight: 0
